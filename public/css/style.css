@@ -1,0 +1,33 @@
+*,
+body {
+  text-align: center;
+  color: white;
+  background-color: rgb(25, 11, 75);
+}
+
+div {
+  margin: 18rem auto 2rem auto;
+  width: 20%;
+}
+
+input {
+  margin: 1rem auto 1rem auto;
+}
+
+img {
+  width: 72px;
+  height: 79px;
+  margin-bottom: 2rem;
+}
+
+button{
+  margin-bottom: 1rem;
+  
+}
+
+input, input::placeholder {
+  text-align: left;
+}
+input:focus {
+    text-align: left;
+}
