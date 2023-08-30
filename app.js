@@ -4,7 +4,6 @@ const https = require("https");
 const { json } = require("body-parser");
 require("dotenv").config();
 
-
 const port = process.env.PORT || 3000;
 
 const app = express();
@@ -35,11 +34,13 @@ app.post("/", function (req, res) {
   };
 
   const jsonData = JSON.stringify(data);
-  const url =
-    "https://us13.api.mailchimp.com/3.0/lists/" + process.env.LIST_ID;
+  const url = "https://us13.api.mailchimp.com/3.0/lists/" + process.env.LIST_ID;
   const options = {
     method: "POST",
-    auth: "Regis1:" + process.env.API_KEY,
+    headers: {
+      Authorization: "auth " + process.env.API_KEY,
+    },
+    //auth: "Regis1:" + process.env.API_KEY,
   };
 
   const request = https.request(url, options, function (response) {
