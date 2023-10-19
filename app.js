@@ -40,7 +40,7 @@ app.post("/", function (req, res) {
     headers: {
       Authorization: "auth " + process.env.API_KEY,
     },
-    //auth: "Regis1:" + process.env.API_KEY,
+    //auth: "Regis1:" + process.env.API_KEY, // tried this but didn't work
   };
 
   const request = https.request(url, options, function (response) {
