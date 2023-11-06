@@ -6,7 +6,7 @@ body {
 }
 
 div {
-  margin: 18rem auto 2rem auto;
+  margin: 1rem auto 2rem auto;
   width: 20%;
 }
 
@@ -20,14 +20,14 @@ img {
   margin-bottom: 2rem;
 }
 
-button{
+button {
   margin-bottom: 1rem;
-  
 }
 
-input, input::placeholder {
+input,
+input::placeholder {
   text-align: left;
 }
 input:focus {
-    text-align: left;
+  text-align: left;
 }
